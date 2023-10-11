@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="images/Film Safari.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .logo {
+            height: 5em;
+            cursor: pointer;
+        }
+
+        .list {
+            /* height: 5rem; */
+            background-color: black;
+            padding: 5px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav {
+            color: white;
+            list-style-type: none;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .card-movie {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #search {
+            width: 50em;
+            padding: 12px 10px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        #searchBtn {
+            /* width: 15em; */
+            padding: 8px 10px;
+            font-size: 1.4em;
+            background-color: rgb(57, 86, 234);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .tops {
+            margin-top: 20px;
+        }
+
+        .map {
+            height: 20px;
+            width: 20px;
+        }
+
+        .footer-dark {
+            margin-bottom: 0px;
+            padding: 50px 0;
+            color: #f0f9ff;
+            background-color: #282d32;
+        }
+
+        .footer-dark h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer-dark ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer-dark ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+        .footer-dark ul a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item:not(.social) {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+
+        .footer-dark .item.text {
+            margin-bottom: 36px;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item.text {
+                margin-bottom: 0;
+            }
+        }
+
+        .footer-dark .item.text p {
+            opacity: 0.6;
+            margin-bottom: 0;
+        }
+
+        .footer-dark .item.social {
+            text-align: center;
+        }
+
+        @media (max-width:991px) {
+            .footer-dark .item.social {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .footer-dark .item.social>a {
+            font-size: 20px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+            margin: 0 8px;
+            color: #fff;
+            opacity: 0.75;
+        }
+
+        .footer-dark .item.social>a:hover {
+            opacity: 0.9;
+        }
+
+        .footer-dark .copyright {
+            text-align: center;
+            padding-top: 24px;
+            opacity: 0.3;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+
+        .vedio {
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+
+        }
+
+        .vedio div {
+            box-shadow: 1px 1px 10px 1px gray;
+            border-radius: 10px;
+        }
+
+        .vedio h2 {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .text{
+            font-size: 1rem;
+            letter-spacing: 1px;
+            padding: 40px;
+            text-align: center;
+        }
+    </Style>
+</head>
+
+<div id="container">
+    <ul class="list">
+        <li id="Title"> <a href="../index.html"><img class="logo" src="../Film Safari.png"></a> </li>
+        <a href="../index.html">
+            <li class="nav">Home</li>
+        </a>
+        <a href="#">
+            <li class="nav"> About </li>
+        </a>
+        <a href="./contact-form-06/contact.html">
+            <li class="nav">Contact Us</li>
+        </a>
+        <li>
+            <form action="php"><input type="text" id="search" placeholder="Search Movie Name"></form>
+        </li>
+        <li><button id="searchBtn"> Search </button></li>
+    </ul>
+</div>
+<section class="vedio">
+    <div>
+        <video controls="" width="600px">
+            <source src="./images/FilmSafari - Google Chrome 2023-10-10 20-14-32.mp4">
+        </video>
+        <h2>Working of Website</h2>
+    </div>
+    <div>
+        <video controls="" width="600px">
+            <source src="./images/explaination video - Made with Clipchamp.mp4">
+        </video>
+        <h2>Working of Website with Explaination</h2>
+    </div>
+</section>
+
+<div  class="text">
+    <p>Welcome to Film Safari, your ultimate online destination for all things cinema! Dive into the mesmerizing
+        world of movies with our meticulously curated movie website. Whether you're a casual moviegoer or a passionate
+        film enthusiast, Cinephile Central has something for everyone.
+        Whether you're searching for the perfect film to watch on a cozy night in, exploring the works of your favorite
+        director, or simply looking to immerse yourself in the world of cinema, Cinephile Central is your one-stop
+        destination for all things movies.
+        Join us on a cinematic journey like no other, and let the magic of storytelling on the silver screen captivate
+        your senses. Explore, engage, and elevate your movie-watching experience with Cinephile Central.
+
+
+
+
+
+    </p>
+</div>
+
+<footer class="footer-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Hosting</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 item text">
+                <h3>Film Safari</h3>
+                <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
+                    rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum
+                    vel in justo.</p>
+            </div>
+            <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                        class="icon ion-social-twitter"></i></a><a href="#"><i
+                        class="icon ion-social-snapchat"></i></a><a href="#"><i
+                        class="icon ion-social-instagram"></i></a></div>
+        </div>
+        <p class="copyright">Film Safari © 2018</p>
+    </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
